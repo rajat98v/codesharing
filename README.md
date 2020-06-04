@@ -79,3 +79,9 @@ docker container rm ccc3f2ff1cab c3f2ff1cab  # delete two container by 'id'
 docker rm $(docker ps -aq) # to clean all container
 docker rm -f $(docker ps -a -q) # to stop all docker container
 ```
+## Github Help
+
+- To check all the commits till date on all the branches. or [Direct Link](https://github.com/rajat98v/codesharing/network)
+    - Go to Insights Tab on Github Repo.
+    - Go to Network on Left menu.
+    - Click on small Dots on any brach or contributor to see commit comment.
