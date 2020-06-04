@@ -6,6 +6,7 @@
 - Create a login and signup system.
 - Server Sync of user data, markdown etc.
 - Feature to add code snippit in markdown.
+- Execution of code and show live output.
 - Add your own feature.
 
 ##### Repository Name suggestion:
