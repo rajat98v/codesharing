@@ -7,7 +7,7 @@
 - Server Sync of user data, markdown etc.
 - Feature to add code snippit in markdown.
 - Execution of code and show live output.
-- Add your own feature.
+- ADD YOUR OWN FEATURE.
 
 ##### Repository Name suggestion:
 
