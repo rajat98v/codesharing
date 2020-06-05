@@ -11,7 +11,7 @@
 
 ##### Repository Name suggestion:
 
-- Stupid_Markdown :)
+- Stupid_Markdown :-)
 - Something-Cool
 
 > ###### Add your own ideas/features, name suggestion for repository, extra edit
