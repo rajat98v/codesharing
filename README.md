@@ -7,11 +7,11 @@
 - Server Sync of user data, markdown etc.
 - Feature to add code snippit in markdown.
 - Execution of code and show live output.
-- Add your own feature.
+- ADD YOUR OWN FEATURE.
 
 ##### Repository Name suggestion:
 
-- Stupid_Markdown
+- Stupid_Markdown :-)
 - Something-Cool
 
 > ###### Add your own ideas/features, name suggestion for repository, extra edit
