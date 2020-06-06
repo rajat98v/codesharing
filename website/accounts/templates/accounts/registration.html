@@ -1,26 +1,17 @@
-{% extends "dappx/base.html" %} 
-{% load static %}
-{% block body_block %}
+<form action="{% url 'accounts:register_view' %}" method='POST'>
+    {% csrf_token %}
 
-<div class="container">
-    <div class="jumbotron">
-        {% if registered %}
+    <input type='text' name='first_name' placeholder='First Name'><br>
+    <input type='text' name='last_name' placeholder='Last Name'><br>
+    <input type='text' name='username' placeholder='Username'><br>
+    <input type='email' name='email' placeholder='email'><br>
+    <input type='password' name='password1' placeholder='Password'><br>
+    <input type='password' name='password2' placeholder='Confirm Password'><br>
+    <button type='submit'>Register</button>
+</form>
 
-        <h1>Thank you for registering!</h1>
-
-        {% else %}
-
-        <h1>Register Here</h1>
-
-        <h3>Just fill out the form.</h3>
-        <form enctype="multipart/form-data" method="POST">
-            {% csrf_token %} {{ user_form.as_p }} {{ profile_form.as_p }}
-
-            <input type="submit" name="" value="Register" />
-        </form>
-
-        {% endif %}
-    </div>
+<div>
+    {% for message in messages %}
+    <h3> {{message}}</h3>
+    {% endfor %}
 </div>
-
-{% endblock %}

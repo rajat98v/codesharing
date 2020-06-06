@@ -9,6 +9,14 @@
 {% else %}
 
 <h2>Register or Login if you'd like to</h2>
-<a href="{% url 'accounts:login_view' %}">Login</a>
+<a href="{% url 'accounts:login_view' %}">Login</a><br>
+<a href="{% url 'accounts:register_view' %}">Register</a>
 
-{% endif %} {% endblock %}
+{% endif %} 
+
+
+    <h4>{{message}}</h4>
+
+{% if message %}
+{% endif %}
+{% endblock %}
