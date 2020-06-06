@@ -1,0 +1,14 @@
+{% block body_block %}
+<h1>Welcome to the Codeshare !</h1>
+
+{% if user.is_authenticated %}
+
+<h2>Hello {{ user.username }}</h2>
+<a href="{% url 'accounts:logout_view' %}">Logout</a>
+
+{% else %}
+
+<h2>Register or Login if you'd like to</h2>
+<a href="{% url 'accounts:login_view' %}">Login</a>
+
+{% endif %} {% endblock %}
