@@ -134,5 +134,7 @@ git push FrontEnd # push changes to 'FrontEnd' branch on server.
     - Click on small Dots on any brach or contributor to see commit comment.
     - [Direct Link to do above](https://github.com/rajat98v/codesharing/network)
 - To use the Auth feature of facebook, Install following packages:
-    - pip install django-allauth
-    - pip install social-auth-app-django
+    ```bash
+    pip install django-allauth
+    pip install social-auth-app-django
+    ```
