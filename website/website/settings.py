@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+
 ]
 
 MIDDLEWARE = [
@@ -63,6 +69,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -70,6 +78,17 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'website.wsgi.application'
 
+AUTHENTICATION_BACKENDS = (
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+    'social_core.backends.facebook.FacebookOAuth2',
+)
+
+SOCIAL_AUTH_FACEBOOK_KEY = '906776599798434'
+SOCIAL_AUTH_FACEBOOK_SECRET = '5bb4c9a7b3e9db9e1e6d8b405c28cdc1'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
