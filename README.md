@@ -1,7 +1,11 @@
 # codesharing
 
+## Done
+- Registration and Login using Postgres sql
+
 ## Roadmap / Todo
 
+- Migrate project to virtualenv
 - Make a markdown editor 
 - Create a login and signup system.
 - Server Sync of user data, markdown etc.
@@ -21,11 +25,13 @@
 
 ```bash
 sudo pacman -S docker # install docker
+sudo pacman -S postgresql python-django python-django-allauth # install postgresql
+yay -S python-social-auth-app-django
 sudo systemctl start docker # starts docker service
 # whenever computer starts use above command to start docker.service 
 ```
 ```bash
-docker pull postgres:alpine # download small(alpine) image of postgres
+sudo docker pull postgres:alpine # download small(alpine) image of postgres
 # creating container named 'postgres-0' with POSTGRES_PASSWORD with image 'postgres:alpine'.
 sudo docker run --name postgres-0 -e POSTGRES_PASSWORD=rajat -d -p 5432:5432 postgres:alpine 
 sudo docker start postgres-0 # start container named 'postgres-0'
